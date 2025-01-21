@@ -1,3 +1,6 @@
+/* Font Familye */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* Custom Properties */
 :root {
   --orange: #fea301;
   --skyBlue: #01acfd;
@@ -13,8 +16,119 @@
   --bright-teal: #3cd8e8;
   --olive: #95b226;
   --indigo: #5d58f0;
+  --gray: #666666;
+  /* Font family */
+  --quicksand: "Quicksand", serif;
+  --raleway: "Raleway", serif;
+  /* Font Size */
+  --fs-100: 1rem;
+  --fs-200: 2rem;
+  --fs-300: 2.25rem;
+  --fs-400: 2.5rem;
+  --fs-500: 2.75rem;
+  --fs-600: 3rem;
+  --fs-700: 3.5rem;
+  /* Font Weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  /* Border Radius */
+  --border-radius-12: 0.75rem;
+  --border-radius-20: 1.25rem;
+}
+/* Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+/* Utility Classes */
+.orange {
+  color: var(--orange);
+}
+.sky-blue {
+  color: var(--skyBlue);
+}
+.paste-blue {
+  color: var(--pasteBlue);
+}
+.purple {
+  color: var(--purple);
+}
+.black {
+  color: var(--black);
+}
+.crystal-blue {
+  color: var(--crystalBlue);
+}
+.darkBlue {
+  color: var(--slightlyDarkBlue);
+}
+.darkOrange {
+  color: var(--slightlyDarkOrange);
+}
+.darkPurple {
+  color: var(--slightlyDarkPurple);
+}
+.bright-teal {
+  background-color: var(--bright-teal);
+}
+.olive {
+  background-color: var(--olive);
+}
+.indigo {
+  background-color: var(--indigo);
+}
+/* Styling */
+body {
+  font-family: var(--quicksand);
 }
 
-body {
-  background-color: red;
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin-top: 0.0625rem;
+  margin-inline: auto;
+}
+.btn {
+  padding-block: 0.625rem;
+  padding-inline: 1.25rem;
+  border: none;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-100);
+  border-radius: var(--border-radius-12);
+  background-color: var(--orange);
+  color: var(--white);
+}
+.gallery-btn {
+  font-weight: var(--fw-medium);
+  font-family: var(--raleway);
+  padding: 0.625rem;
+  border-radius: 100vmax;
+  border: none;
+}
+/* Header */
+header {
+  margin-top: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
 }
