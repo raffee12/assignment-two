@@ -388,6 +388,7 @@ header nav {
     linear-gradient(to bottom, #fff, #ffd283);
   background-position: center center;
 }
+
 @media screen and (max-width: 500px) {
   .hide {
     display: block;
