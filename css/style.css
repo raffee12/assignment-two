@@ -276,8 +276,6 @@ header nav {
   overflow: hidden;
 }
 
-.gallery-card h3 {
-}
 .gallery-btn {
   font-weight: var(--fw-medium);
   font-family: var(--raleway);
